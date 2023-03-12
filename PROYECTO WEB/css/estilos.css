@@ -1,0 +1,284 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #100101;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+#buscador {
+  float: left;
+}
+
+#logo {
+  text-align: center;
+  height: 40px;
+  float: left;
+  width: 66.6%;
+}
+
+#logo img {
+  max-height: 50px;
+  vertical-align: middle;
+}
+#logo a {
+width: 50%;
+height: 100%;
+display: block;
+}
+
+
+#logo a {width: 100%;background-image: url('../img/FreshFlow_logo1.png');height: 100%;background-size: contain;background-repeat: no-repeat;background-position: center;}
+#logo a:hover{width: 100%;background-image: url('../img/FreshFlow_logo2.png');height: 100%;background-size: contain;background-repeat: no-repeat;background-position: center;}
+
+
+#login button {
+  background-color: #f7ef06;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7ef06;
+  height: 50px;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#menu li {
+  margin: 0 10px;
+}
+
+#menu li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu li a:hover {
+  background-color: #f51616;
+  color: #fff;
+}
+
+
+/* Estilos para las noticias */
+
+article {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+article h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+article a {
+  display: block;
+  margin-top: 10px;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilos para el título */
+
+#principal h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+}
+
+/* Estilos para el contenedor principal */
+
+#noticias {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para el contenedor secundario */
+
+#principal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+/* ultimos lanzamientos */
+
+#ultimos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#ultimos_lanzamientos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  width: 80%;
+}
+
+#ultimos_lanzamientos > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#ultimos_lanzamientos h2 {
+  margin: 20px 0 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#ultimos_lanzamientos p {
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  color: #666;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 750px) {
+  #ultimos_lanzamientos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para los artistas relevantes */
+
+#artistas_relevantes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.artista {
+  width: calc(33.33% - 20px);
+  margin: 0 10px;
+  text-align: center;
+}
+
+.artista img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.description {
+  width: 60%;
+}
+
+.social-media {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media a i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.social-media a i:hover {
+  color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .social-media {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-container {
+    padding: 0 10px;
+  }
+}
+
+.footer-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer h3 {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+
+footer p {
+  margin: 0 0 10px;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  border-top: 1px solid #aaa;
+  padding-top: 20px;
+  font-size: 12px;
+}

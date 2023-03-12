@@ -1,0 +1,147 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #100101;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+#buscador {
+  float: left;
+}
+
+#logo {
+  text-align: center;
+  float: left;
+  width: 66.6%;
+}
+
+#logo img {
+  max-height: 50px;
+  vertical-align: middle;
+}
+
+#login button {
+  background-color: #f7ef06;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7ef06;
+  height: 50px;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#menu li {
+  margin: 0 10px;
+}
+
+#menu li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu li a:hover {
+  background-color: #f51616;
+  color: #fff;
+}
+
+	/* Estilos CSS para la página de tienda */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.producto {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: calc(33.3% - 40px);
+}
+
+.producto img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    margin: 0;
+    color: #333;
+}
+
+.producto p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.btn-comprar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #0062cc;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 50px 20px;
+    }
+    
+    .producto {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 980px) {
+  .producto {
+    width: calc(50% - 40px);
+  }
+}
